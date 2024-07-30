@@ -1,0 +1,20 @@
+<!-- Modal -->
+<ng-template #content let-modal>
+  <div class=" modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{ modalTitle }}</h5>
+        <button type="button" class="close" aria-label="Close" (click)="closeModal(modal)">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{ modalDescription }}
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" (click)="navigateToCatalogue(modal)">Смотреть!</button>
+      </div>
+    </div>
+  </div>
+</ng-template>
+

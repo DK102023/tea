@@ -1,0 +1,11 @@
+.card-image {
+  margin: 0 auto;
+  /* background-position: center; */
+  height: 400px;
+  /* text-align: center; */
+  width: 400px;
+  border-radius: 50%;
+  border: 1px solid;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

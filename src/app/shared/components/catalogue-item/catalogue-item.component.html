@@ -1,0 +1,19 @@
+<div class="col px-1">
+  <!-- Содержимое элемента 1 -->
+  <div class="card ms-2 me-2">
+    <!--<img src="../../img/grid-images/grid-image-1.png" alt="" />-->
+    <div class="card-image " [ngStyle]="{'background-image': 'url(' + product.image + ')'}"></div>
+    <div class="card-main-info">
+      <h3 class="ms-5 mt-4 mb-3">{{product.title}}</h3>
+      <div class="item-price ms-2">- {{product.price}} руб.</div>
+    </div>
+
+    <p class="ms-5 mb-4" > {{product.description | exerptFormat: 90 }} </p>
+    <div class="order">
+      <a class="btn btn-primary  ms-1 mb-4" [routerLink]="['/catalogue', product.id]" >Подробнее</a>
+     <!--<a class="btn btn-primary  ms-1 mb-4" href="#" role="button">Заказать</a> -->
+
+    </div>
+
+  </div>
+</div>

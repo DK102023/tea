@@ -1,0 +1,14 @@
+<!-- <section class="container wow animate__slideInLeft " data-wow-duration="5s" data-wow-delay="0.8s"> -->
+<section class="container ">
+  <div class="row " >
+    <h2 class="text-center mb-5 pb-1 section-title">Наши чайные коллекции</h2>
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-3 g-lg-4 gx-3">
+    <app-catalogue-item [product]="product" *ngFor="let product of products" ></app-catalogue-item>
+  </div>
+  <div class="loader-bg d-flex justify-content-center align-items-center w-100 " style="height: 100vh;" *ngIf="loading">
+    <div class="loader "></div>
+  </div>
+
+</section>

@@ -1,0 +1,7 @@
+html, body { min-height: 100%; margin: 0; padding: 0; }
+.full-height {
+  min-height: 85vh; /* 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}

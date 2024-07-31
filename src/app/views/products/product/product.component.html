@@ -1,0 +1,24 @@
+<section *ngIf="product">
+  <div class="container">
+    <h2 class="text-center mt-5 mb-5">Описание товара</h2>
+    <div class="col px-1">
+      <!-- Содержимое элемента 1 -->
+      <div class="card ms-2 me-2">
+        <div *ngIf="product.image" class="card-image mt-3" [ngStyle]="{'background-image': 'url(' + product.image + ')'}"></div>
+        <div class="card-main-info d-flex justify-content-between align-items-center">
+          <h3 class="ms-5 mt-4 mb-3 text-capitalize text-center">{{product.title}}</h3>
+          <div class="item-price ms-2 me-5">- {{product.price}} руб.</div>
+        </div>
+
+        <p class="ms-5 mb-4 me-5">{{product.description}}</p>
+        <div class="d-flex justify-content-end">
+          <div class="order me-5">
+            <a class="btn btn-primary ms-1 mb-4"  routerLink="/order" [queryParams]="{product: product.title}">Купить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
